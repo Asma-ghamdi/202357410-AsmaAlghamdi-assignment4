@@ -18,6 +18,8 @@ In the JavaScript file, AI helped me implement interactive features such as:
 
 AI was also used to explain how to connect these features correctly to the HTML elements already in my code and how to organize them inside one `script.js` file without causing conflicts.
 
+AI was also used to guide me through deploying the website using GitHub Pages. It helped me understand how to link the repository to a live URL, configure the deployment settings, and ensure that all files (such as CSS, JavaScript, and images) were correctly loaded using relative paths. This allowed me to successfully publish my portfolio website and make it publicly accessible.
+
 ## Benefits
 Using AI made the assignment more approachable because it broke larger tasks into smaller steps. As a beginner, I found it especially helpful when I needed to understand where to place code and how different files work together.
 
@@ -57,5 +59,6 @@ More specifically, I learned:
 - how to save user preferences using `localStorage`
 - how to connect CSS classes to JavaScript in order to change the appearance of the page dynamically
 - how to improve user experience by adding guidance, feedback messages, and interactive buttons
+- how to deploy a website using githup pages
 
 Overall, AI helped me understand the logic behind the features I added, not just complete the assignment. It made the learning process more gradual and manageable, especially when I was unsure where to start or how to debug an issue.

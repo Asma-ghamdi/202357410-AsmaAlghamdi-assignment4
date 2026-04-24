@@ -1,7 +1,9 @@
-# 202357410-AsmaAlghamdi-assignment3
+# 202357410-AsmaAlghamdi-assignment4
 # Personal Portfolio Website
 
-This project is a personal portfolio website created as part of Assignment 3,
+🔗 **Live Demo:** https://asma-ghamdi.github.io/202357410-AsmaAlghamdi-assignment4/
+
+This project is a personal portfolio website created as part of Assignment 4,
 building on the work done in Assignments 1 and 2.
 It extends the website with advanced features including API integration, 
 project filtering and sorting, state management, and performance optimizations.
