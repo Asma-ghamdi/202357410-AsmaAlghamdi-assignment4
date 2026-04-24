@@ -1,6 +1,6 @@
 /* Apply basic styling to the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -8,10 +8,10 @@ body {
 
 /* Style the header section */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #e1e4bc;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
 }
 
 
@@ -22,6 +22,7 @@ header {
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -108,7 +109,8 @@ html, body {
   color: #ccc;
 }
 .dark-mode header {
-  background-color: #222;
+  background-color: #333;
+  color: #fff;
 }
 .dark-mode .filter-btn {
     color: #9d5cf6;
@@ -130,15 +132,17 @@ html, body {
 /* Style the theme toggle button */
 #theme-toggle {
     margin-top: 10px;
-    padding: 8px 12px;
+    padding: 10px 16px;
     border: none;
     cursor: pointer;
-    background-color: #555;
+    background-color: #7c3aed;
     color: white;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 #theme-toggle:hover {
-    background-color: #777;
+    background-color: #5b21b6;
 }
 /* Add a hover effect to buttons */
 button:hover {
@@ -178,8 +182,7 @@ nav ul {
 }
 /* Style the navigation links */
 nav a {
-  text-decoration: none;
-  color: #d1bfbf;
+  color: #5b21b6;   /* darker purple */
   font-weight: bold;
 }
 /* Add a hover effect to navigation links */
@@ -281,18 +284,18 @@ img {
 
 .guide-section {
   padding: 60px 20px;
-  background: #111;
+  background: #eef1f5;
   text-align: center;
 }
 
 .guide-section h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: #333;
 }
 
 .guide-subtitle {
-  color: #bbb;
+  color: #666;
   margin-bottom: 40px;
   font-size: 1rem;
 }
@@ -306,17 +309,18 @@ img {
 }
 
 .guide-card {
-  background: #1c1c1c;
+  background: #fff;
   padding: 25px 20px;
+  border: 1px solid #ddd;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
 
 .guide-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
 .step-number {
@@ -333,13 +337,63 @@ img {
 }
 
 .guide-card h3 {
-  color: #fff;
+  color: #333;
   margin-bottom: 10px;
   font-size: 1.1rem;
 }
 
 .guide-card p {
-  color: #ccc;
+  color: #333;
   font-size: 0.95rem;
   line-height: 1.6;
+}
+
+/* Dark mode for guide section */
+.dark-mode .guide-section {
+  background: #111;
+}
+
+.dark-mode .guide-section h2 {
+  color: #fff;
+}
+
+.dark-mode .guide-subtitle {
+  color: #bbb;
+}
+
+.dark-mode .guide-card {
+  background: #1c1c1c;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode .guide-card:hover {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+.dark-mode .guide-card h3 {
+  color: #fff;
+}
+
+.dark-mode .guide-card p {
+  color: #ccc;
+}
+
+/* Add a transition effect to buttons for smooth interaction */
+button, .project-button {
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 2px solid #7c3aed;
+}
+
+section {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
