@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Makes the website responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Asma Alghamdi, a Computer Science student showcasing projects in UI/UX design and game development.">
+
+    <title>Portfolio</title>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Preload key images for faster loading -->
+    <link rel="preload" as="image" href="assets/images/events.jpg">
+    <link rel="preload" as="image" href="assets/images/star.jpg">
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Asma Alghamdi</h1>
+        <p>Computer Science student learning web development.</p>
+
+        <!-- Greeting text will be added here using JavaScript -->
+        <p id="greeting"></p>
+        <button id="theme-toggle" aria-label="Toggle theme">Toggle Theme</button>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+     
+    <!-- Guide section to help users navigate the website -->
+    <section id="guide" class="guide-section">
+        <h2>How to Use This Website</h2>
+        <p class="guide-subtitle">Follow these steps to explore the website easily.</p>
+
+    <div class="guide-container">
+        <div class="guide-card">
+            <span class="step-number">1</span>
+            <h3>Use the Navigation Bar</h3>
+            <p>Click About, Projects, or Contact to move between sections.</p>
+        </div>
+
+        <div class="guide-card">
+            <span class="step-number">2</span>
+            <h3>Go to Projects</h3>
+            <p>Browse the Projects section to see the work I have done.</p>
+        </div>
+
+        <div class="guide-card">
+            <span class="step-number">3</span>
+            <h3>View Project Details</h3>
+            <p>Click “View Details” on a project card to learn more about it.</p>
+        </div>
+
+        <div class="guide-card">
+            <span class="step-number">4</span>
+            <h3>Use Filter or Sort</h3>
+            <p>Organize projects using the available filter or sort options.</p>
+        </div>
+
+        <div class="guide-card">
+            <span class="step-number">5</span>
+            <h3>Send a Message</h3>
+            <p>Go to the Contact section, fill in the form, and submit your message.</p>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Main container for page sections -->
+    <div class="container">
+
+        <!-- About Me section -->
+        <section class="about" id="about">
+            <h2>About me</h2>
+            <p>I am a junior computer science student who is ambitious and always working on achieving goals. I like to make a clear plan for anything I am working on and that makes me more capable of achieving goals such as academic valediction.</p>
+        </section>
+        
+        <!-- GitHub Repos Section -->
+        <section id="github-repos">
+            <h2>My GitHub Repositories</h2>
+            <div id="repos-container">
+                <p>Loading repositories...</p>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="uiux">UI/UX</button>
+                <button class="filter-btn" data-filter="game">Game</button>
+            </div>
+            <!-- Sort Button -->
+            <div class="sort-buttons">
+                <button id="sort-btn">Sort:  Large → Small</button>
+            </div>
+            <!-- Project 1 -->
+            <div class="project" id="project1" data-category="uiux">
+                <h3>Project 1: Event Management System</h3>
+                <img src="assets/images/events.jpg" alt="Event Management System project image" loading="lazy">
+                <button class="project-button">View Details</button>
+                <p class="project-details">A system designed to manage events by organizing event details such as title, date, and description. Done using a waterfall model, with high fidelity prototype using Figma.</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project" id="project2" data-category="game">
+                <h3>Project 2: Flying Stars Game</h3>
+                <img src="assets/images/star.jpg" alt="Flying Stars Game project image" loading="lazy">
+                <button class="project-button">View Details</button>
+                <p class="project-details">A small interactive game where stars move on the screen and the player controls an element to interact with them. This project was created to practice object-oriented programming using Java.</p>
+            </div>
+        </section>  
+
+        <!-- Contact section -->
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+              <form id="contact-form">
+
+                <!-- Name input -->
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required>
+
+                <!-- Email input -->
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="example@email.com">
+
+                <!-- Message input -->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Submit button -->
+                <button type="submit">Send</button>
+                <p id="form-message"></p>
+            </form>
+        </section>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+
+
+</html>
+
